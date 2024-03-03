@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GECG Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Resetting default margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Global styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 100px;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between; /* Align logo and nav horizontally */
+            align-items: center; /* Align logo and nav vertically */
+        }
+
+        header img {
+            width: 50px; /* Adjust the size of the logo */
+            margin-left: 20px; /* Add some space between the logo and nav */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ccc;
+        }
+
+        /* Hero section styles */
+        .hero {
+            background-color: #eee;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h2 {
+            margin: 0;
+            font-size: 28px;
+            color: #444;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 50px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        /* Featured books section styles */
+        .featured-books {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .featured-books h2 {
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+
+        .books {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .book {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .book:hover {
+            transform: translateY(-5px);
+        }
+
+        .book img {
+            width: 200px;
+            height: 300px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .book:hover img {
+            transform: scale(1.1);
+        }
+
+        .book h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .book p {
+            font-size: 16px;
+            color: #777;
+        }
+
+        .book a {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .book a:hover {
+            background-color: #555;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: absolute;
+            bottom: -110%;
+            width:100%;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
+        /*** logo **/
+        .logo{
+            position: absolute;
+            top: 30px;
+            height: 72px;
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="GECG_logo.png" class="logo" > <!-- Replace logo.png with your logo file -->
+            <h1><center>Welcome to GEC Gandhinagar Virtual Library</center></h1>
+            <nav>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="#">Books</a></li>
+                    <li><a href="abotus.html">About us</a></li>
+                    <li><a href="contact.html">Feedback Form</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>You Are Entering Into Virtual Library</h2>
+            <br>
+            <br>
+            <a href="loginpage.html" class="btn">Login</a>
+        </div>
+    </section>
+
+    <section class="featured-books">
+        <div class="container">
+            <h2>Featured Books</h2>
+            <div class="books">
+                <div class="book">
+                    <img src="rich1.jpg" alt="rich">
+                    <h3>Rich Dad Poor Dad</h3>
+                    <p>Robert Kiyosaki</p>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+                <div class="book">
+                    <img src="the-psychology.webp" alt="the-psychology">
+                    <h3>The Psychology of Money</h3>
+                    <p>Morgan Housel</p>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+                <div class="book">
+                    <img src="fin.jpg" alt="fin">
+                    <h3>Financial Management</h3>
+                    <p>R.K. Gupta</p>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Modern Library. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
